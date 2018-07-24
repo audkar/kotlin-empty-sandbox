@@ -38,7 +38,7 @@ dependencies {
     compile "io.reactivex.rxjava2:rxjava:2.0.0-RC1"
 }
 buildscript {
-    ext.kotlin_version = '1.0.3'
+    ext.kotlin_version = '1.2.51'
     repositories {
         mavenCentral()
     }
