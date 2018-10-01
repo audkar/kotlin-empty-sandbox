@@ -1,0 +1,2 @@
+# kotlin-empty-sandbox
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f7add8f064924fac9437e591ffd6088a)](https://app.codacy.com/app/audrius.karosevicius/kotlin-empty-sandbox?utm_source=github.com&utm_medium=referral&utm_content=audkar/kotlin-empty-sandbox&utm_campaign=Badge_Grade_Settings)
