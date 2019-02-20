@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">EmptyAndroid</string>
+    <string name="click_me">click me</string>
+    <string name="click">CLICK</string>
 </resources>
