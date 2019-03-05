@@ -36,6 +36,7 @@ dependencies {
     implementation "androidx.annotation:annotation:1.0.2"
     implementation "com.google.android.material:material:1.0.0"
     implementation "androidx.recyclerview:recyclerview:1.0.0"
+    implementation "androidx.core:core-ktx:1.0.1"
 
     testImplementation "androidx.test:core:1.1.0"
     testImplementation "androidx.test:runner:1.1.1"
@@ -51,7 +52,7 @@ dependencies {
     androidTestImplementation "androidx.test:rules:1.1.1"
     androidTestImplementation "androidx.test.ext:junit:1.1.0"
     androidTestImplementation "androidx.test.ext:truth:1.1.0"
-    androidTestImplementation "com.google.truth:truth:0.42"
+    androidTestImplementation "com.google.truth:truth:0.43"
     androidTestImplementation "androidx.test.espresso:espresso-core:3.1.1"
 }
 
