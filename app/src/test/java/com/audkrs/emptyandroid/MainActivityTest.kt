@@ -31,6 +31,6 @@ class MainActivityUnitTest {
         }
 
         onView(withId(R.id.hello_text))
-            .check(matches(withText("CLICK")))
+            .check(matches(withText("BAZINGA")))
     }
 }
