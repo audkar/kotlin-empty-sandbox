@@ -2,10 +2,15 @@ package com.audkrs.emptyandroid
 
 import android.os.Bundle
 import android.view.View
+import com.audkrs.emptyandroid.main.Bazinga
 import dagger.android.support.DaggerAppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
+import javax.inject.Inject
 
 class MainActivity : DaggerAppCompatActivity() {
+
+    @Inject
+    lateinit var bazinga: Bazinga
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -13,6 +18,6 @@ class MainActivity : DaggerAppCompatActivity() {
     }
 
     fun onClickMe(view: View) {
-        hello_text.text = getString(R.string.click)
+        hello_text.text = bazinga.haaa()
     }
 }
