@@ -53,7 +53,7 @@ dependencies {
     testImplementation "androidx.test:core:1.1.0"
     testImplementation "androidx.test:runner:1.1.1"
     testImplementation "androidx.test:rules:1.1.1"
-    testImplementation "androidx.test.ext:junit:1.1.0"
+    testImplementation "androidx.test.ext:junit:1.1.1"
     testImplementation "androidx.test.ext:truth:1.1.0"
     testImplementation "com.google.truth:truth:0.43"
     testImplementation "androidx.test.espresso:espresso-core:3.1.1"
