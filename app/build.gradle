@@ -56,7 +56,7 @@ dependencies {
     testImplementation "androidx.test.ext:junit:1.1.1"
     testImplementation "androidx.test.ext:truth:1.2.0"
     testImplementation "com.google.truth:truth:0.45"
-    testImplementation "androidx.test.espresso:espresso-core:3.1.1"
+    testImplementation "androidx.test.espresso:espresso-core:3.2.0"
     testImplementation "org.robolectric:robolectric:4.2.1"
 
     androidTestImplementation "androidx.test:core:1.1.0"
