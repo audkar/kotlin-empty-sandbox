@@ -30,5 +30,5 @@ dependencies {
     implementation "androidx.core:core-ktx:1.0.2"
     implementation "com.google.dagger:dagger-android-support:2.23.2"
     kapt "com.google.dagger:dagger-compiler:2.23.2"
-    kapt "com.google.dagger:dagger-android-processor:2.22.1"
+    kapt "com.google.dagger:dagger-android-processor:2.24"
 }
