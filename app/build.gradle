@@ -30,13 +30,6 @@ android {
     }
 }
 
-kapt {
-    arguments {
-        arg('dagger.formatGeneratedSource', 'disabled')
-        arg('dagger.gradle.incremental')
-    }
-}
-
 dependencies {
     implementation project(":main")
     implementation "androidx.appcompat:appcompat:1.0.2"
