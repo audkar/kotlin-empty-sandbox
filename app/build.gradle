@@ -38,7 +38,7 @@ android {
 }
 
 dependencies {
-    def dagger = "2.26"
+    def dagger = "2.27"
     implementation project(":main")
     implementation "androidx.appcompat:appcompat:1.1.0"
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
