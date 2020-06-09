@@ -27,6 +27,7 @@ dependencies {
     implementation("androidx.annotation:annotation:1.1.0")
     implementation("com.google.android.material:material:1.1.0")
     implementation("androidx.core:core-ktx:1.3.0")
+    implementation ("androidx.fragment:fragment-ktx:1.2.4")
     implementation("com.google.dagger:dagger-android-support:${Versions.dagger}")
     kapt("com.google.dagger:dagger-compiler:${Versions.dagger}")
     kapt("com.google.dagger:dagger-android-processor:${Versions.dagger}")

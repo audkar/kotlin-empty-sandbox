@@ -10,7 +10,8 @@ interface ActivityModule : AndroidInjector<MainActivity> {
     @ActivityScope
     @ContributesAndroidInjector(
         modules = [
-            FragmentModule::class
+            FragmentModule::class,
+            NavigationModule::class
         ]
     )
     fun contributeMainActivityInjector(): MainActivity
