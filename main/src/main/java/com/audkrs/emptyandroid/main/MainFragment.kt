@@ -2,12 +2,14 @@ package com.audkrs.emptyandroid.main
 
 import android.os.Bundle
 import android.view.View
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.commit
-import dagger.android.support.DaggerFragment
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.main_fragment.*
 import javax.inject.Inject
 
-class MainFragment : DaggerFragment(R.layout.main_fragment) {
+@AndroidEntryPoint
+class MainFragment : Fragment(R.layout.main_fragment) {
 
   @Inject
   internal lateinit var bazinga: Bazinga

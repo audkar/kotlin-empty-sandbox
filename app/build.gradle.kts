@@ -3,6 +3,7 @@ plugins {
     kotlin("android")
     id("kotlin-android-extensions")
     id("kotlin-kapt")
+    id("dagger.hilt.android.plugin")
 }
 
 android {
@@ -43,9 +44,8 @@ dependencies {
     implementation("androidx.recyclerview:recyclerview:1.1.0")
     implementation("androidx.core:core-ktx:1.3.0")
     implementation ("androidx.fragment:fragment-ktx:1.2.5")
-    implementation("com.google.dagger:dagger-android-support:${Versions.dagger}")
-    kapt("com.google.dagger:dagger-compiler:${Versions.dagger}")
-    kapt("com.google.dagger:dagger-android-processor:${Versions.dagger}")
+    implementation("com.google.dagger:hilt-android:${Versions.dagger_hilt}")
+    kapt ("com.google.dagger:hilt-android-compiler:${Versions.dagger_hilt}")
 
     testImplementation("androidx.test:core:1.2.0")
     testImplementation("androidx.test:runner:1.2.0")
@@ -63,5 +63,9 @@ dependencies {
     androidTestImplementation("androidx.test.ext:truth:1.2.0")
     androidTestImplementation("com.google.truth:truth:1.0.1")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.2.0")
+}
+
+kapt {
+    correctErrorTypes = true
 }
 

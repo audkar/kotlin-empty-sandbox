@@ -1,10 +1,8 @@
 package com.audkrs.emptyandroid
 
-import dagger.android.AndroidInjector
-import dagger.android.DaggerApplication
+import android.app.Application
+import dagger.hilt.android.HiltAndroidApp
 
-class EmptyApp : DaggerApplication() {
-    private val appComponent = DaggerAppComponent.factory().create(this)
-
-    override fun applicationInjector(): AndroidInjector<EmptyApp> = appComponent
+@HiltAndroidApp
+class EmptyApp : Application() {
 }

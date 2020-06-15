@@ -5,4 +5,5 @@ object Versions {
     const val ktor = "1.3.2"
     const val serialization = "0.20.0"
     const val dagger = "2.28"
+    const val dagger_hilt = "2.28-alpha"
 }

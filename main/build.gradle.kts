@@ -3,6 +3,7 @@ plugins {
     kotlin("android")
     id("kotlin-android-extensions")
     id("kotlin-kapt")
+    id("dagger.hilt.android.plugin")
 }
 
 android {
@@ -28,7 +29,6 @@ dependencies {
     implementation("com.google.android.material:material:1.1.0")
     implementation("androidx.core:core-ktx:1.3.0")
     implementation ("androidx.fragment:fragment-ktx:1.2.5")
-    implementation("com.google.dagger:dagger-android-support:${Versions.dagger}")
-    kapt("com.google.dagger:dagger-compiler:${Versions.dagger}")
-    kapt("com.google.dagger:dagger-android-processor:${Versions.dagger}")
+    implementation("com.google.dagger:hilt-android:${Versions.dagger_hilt}")
+    kapt ("com.google.dagger:hilt-android-compiler:${Versions.dagger_hilt}")
 }
