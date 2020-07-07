@@ -14,7 +14,7 @@ android {
         targetSdkVersion(29)
         versionCode = 1
         versionName = "1.0"
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = "com.audkrs.emptyandroid.TestRunner"
     }
     buildTypes {
         getByName("release") {
@@ -55,6 +55,8 @@ dependencies {
     testImplementation("com.google.truth:truth:1.0.1")
     testImplementation("androidx.test.espresso:espresso-core:3.2.0")
     testImplementation("org.robolectric:robolectric:4.3.1")
+    testImplementation ("com.google.dagger:hilt-android-testing:${Versions.dagger_hilt}")
+    kaptTest("com.google.dagger:hilt-android-compiler:${Versions.dagger_hilt}")
 
     androidTestImplementation("androidx.test:core:1.2.0")
     androidTestImplementation("androidx.test:runner:1.2.0")
@@ -63,9 +65,22 @@ dependencies {
     androidTestImplementation("androidx.test.ext:truth:1.2.0")
     androidTestImplementation("com.google.truth:truth:1.0.1")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.2.0")
+    androidTestImplementation ("com.google.dagger:hilt-android-testing:${Versions.dagger_hilt}")
+    kaptAndroidTest("com.google.dagger:hilt-android-compiler:${Versions.dagger_hilt}")
 }
+
+configurations.all {
+    resolutionStrategy.dependencySubstitution {
+      substitute(module("junit:junit:4.12")).with(module("junit:junit:4.13"))
+    }
+}
+
 
 kapt {
     correctErrorTypes = true
+}
+
+hilt {
+    enableTransformForLocalTests = true
 }
 
