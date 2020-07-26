@@ -18,10 +18,9 @@ class MainFragment : Fragment(R.layout.main_fragment) {
 
   override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
     super.onViewCreated(view, savedInstanceState)
-    main_text.text = "MainFragment: ${bazinga.haaa()}"
-    main_go_next.setOnClickListener {
+    main_open_maps.setOnClickListener {
       parentFragmentManager.commit {
-        replace(navigation.containerId, SecondaryFragment())
+        replace(navigation.containerId, MapsFragment())
         addToBackStack(null)
       }
     }

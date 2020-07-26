@@ -47,6 +47,8 @@ dependencies {
     implementation("com.google.dagger:hilt-android:${Versions.dagger_hilt}")
     kapt ("com.google.dagger:hilt-android-compiler:${Versions.dagger_hilt}")
     debugImplementation("com.squareup.leakcanary:leakcanary-android:2.4")
+    implementation("com.google.android.libraries.maps:maps:3.1.0-beta")
+    implementation("com.google.maps.android:maps-v3-ktx:2.1.1")
 
     testImplementation("androidx.test:core:1.2.0")
     testImplementation("androidx.test:runner:1.2.0")
