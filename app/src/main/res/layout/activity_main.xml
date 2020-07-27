@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,12 +9,14 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.audkrs.emptyandroid.MainActivity">
+    tools:context="com.audkrs.emptyandroid.MainActivity"
+    >
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/main_fragment_container"
-        android:name="com.audkrs.emptyandroid.main.MainFragment"
+        android:id="@+id/maps"
+        android:name="com.google.android.libraries.maps.SupportMapFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        />
 
 </LinearLayout>

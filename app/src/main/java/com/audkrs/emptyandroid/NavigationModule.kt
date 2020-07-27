@@ -10,5 +10,5 @@ import dagger.hilt.android.components.ActivityComponent
 @InstallIn(ActivityComponent::class)
 class NavigationModule {
   @Provides
-  fun provideMainNavigation() = MainNavigation(R.id.main_fragment_container)
+  fun provideMainNavigation() = MainNavigation(android.R.id.content)
 }
