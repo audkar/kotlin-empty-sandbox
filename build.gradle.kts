@@ -14,7 +14,7 @@ buildscript {
 }
 
 plugins {
-    id("com.github.ben-manes.versions") version "0.29.0"
+    id("com.github.ben-manes.versions") version "0.31.0"
 }
 
 allprojects {
@@ -39,11 +39,6 @@ allprojects {
             }
         }
     }
-}
-
-tasks.wrapper {
-    gradleVersion = "6.5.1"
-    distributionType = Wrapper.DistributionType.ALL
 }
 
 fun isNonStable(version: String): Boolean {
@@ -72,4 +67,9 @@ tasks.named<DependencyUpdatesTask>("dependencyUpdates") {
     }
     checkForGradleUpdate = true
     gradleReleaseChannel = CURRENT.id
+}
+
+tasks.wrapper {
+    gradleVersion = "6.6.1"
+    distributionType = Wrapper.DistributionType.ALL
 }

@@ -13,9 +13,11 @@ import kotlinx.android.synthetic.main.activity_main.*
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
+import org.robolectric.annotation.LooperMode
 
 @RunWith(AndroidJUnit4::class)
 @HiltAndroidTest
+@LooperMode(LooperMode.Mode.LEGACY)
 class MainActivityUnitTest {
 
     @Rule(order = 0)
