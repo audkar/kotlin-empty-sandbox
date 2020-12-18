@@ -53,7 +53,7 @@ dependencies {
     testImplementation("androidx.test:rules:1.3.0")
     testImplementation("androidx.test.ext:junit:1.1.2")
     testImplementation("androidx.test.ext:truth:1.3.0")
-    testImplementation("com.google.truth:truth:1.0.1")
+    testImplementation("com.google.truth:truth:1.1")
     testImplementation("androidx.test.espresso:espresso-core:3.3.0")
     testImplementation("org.robolectric:robolectric:4.4")
     testImplementation ("com.google.dagger:hilt-android-testing:${Versions.dagger_hilt}")
