@@ -42,7 +42,7 @@ dependencies {
     implementation("androidx.annotation:annotation:1.1.0")
     implementation("com.google.android.material:material:1.2.1")
     implementation("androidx.recyclerview:recyclerview:1.1.0")
-    implementation("androidx.core:core-ktx:1.3.1")
+    implementation("androidx.core:core-ktx:1.3.2")
     implementation ("androidx.fragment:fragment-ktx:1.2.5")
     implementation("com.google.dagger:hilt-android:${Versions.dagger_hilt}")
     kapt ("com.google.dagger:hilt-android-compiler:${Versions.dagger_hilt}")
