@@ -55,7 +55,7 @@ dependencies {
     testImplementation("androidx.test.ext:truth:1.3.0")
     testImplementation("com.google.truth:truth:1.1.2")
     testImplementation("androidx.test.espresso:espresso-core:3.3.0")
-    testImplementation("org.robolectric:robolectric:4.5")
+    testImplementation("org.robolectric:robolectric:4.5.1")
     testImplementation ("com.google.dagger:hilt-android-testing:${Versions.dagger_hilt}")
     kaptTest("com.google.dagger:hilt-android-compiler:${Versions.dagger_hilt}")
 
