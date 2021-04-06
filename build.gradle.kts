@@ -31,9 +31,7 @@ allprojects {
                             "kotlin.Experimental," +
                             "kotlinx.coroutines.ExperimentalCoroutinesApi," +
                             "kotlinx.coroutines.FlowPreview," +
-                            "kotlin.time.ExperimentalTime",
-                    "-XXLanguage:+InlineClasses",
-                    "-Xallow-result-return-type"
+                            "kotlin.time.ExperimentalTime"
                 )
                 jvmTarget = "1.8"
             }

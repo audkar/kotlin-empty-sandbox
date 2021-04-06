@@ -1,11 +1,10 @@
 package com.audkrs.emptyandroid
 
 import android.os.Bundle
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import com.audkrs.emptyandroid.databinding.ActivityMainBinding
 import com.audkrs.emptyandroid.main.Bazinga
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.android.synthetic.main.activity_main.*
 import javax.inject.Inject
 
 @AndroidEntryPoint
@@ -16,11 +15,12 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-    }
-
-    fun onClickMe(view: View) {
-        hello_text.text = bazinga.haaa()
+        with(ActivityMainBinding.inflate(layoutInflater)) {
+            clickMe.setOnClickListener {
+                helloText.text = bazinga.haaa()
+            }
+            setContentView(root)
+        }
     }
 
     override fun onBackPressed() {
