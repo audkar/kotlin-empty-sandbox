@@ -7,9 +7,9 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath("com.android.tools.build:gradle:${Versions.agp}")
-        classpath(kotlin("gradle-plugin", Versions.kotlin))
-        classpath("com.google.dagger:hilt-android-gradle-plugin:${Versions.dagger_hilt}")
+        classpath("com.android.tools.build:gradle:4.1.3")
+        classpath(kotlin("gradle-plugin", "1.4.32"))
+        classpath("com.google.dagger:hilt-android-gradle-plugin:2.33-beta")
     }
 }
 
@@ -70,6 +70,6 @@ tasks.named<DependencyUpdatesTask>("dependencyUpdates") {
 }
 
 tasks.wrapper {
-    gradleVersion = "6.6.1"
+    gradleVersion = "6.8.3"
     distributionType = Wrapper.DistributionType.ALL
 }

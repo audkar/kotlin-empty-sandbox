@@ -23,11 +23,11 @@ android {
 
 dependencies {
     implementation("androidx.appcompat:appcompat:1.2.0")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutines}")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.3")
     implementation("androidx.annotation:annotation:1.2.0")
     implementation("com.google.android.material:material:1.3.0")
     implementation("androidx.core:core-ktx:1.3.2")
     implementation ("androidx.fragment:fragment-ktx:1.3.2")
-    implementation("com.google.dagger:hilt-android:${Versions.dagger_hilt}")
-    kapt ("com.google.dagger:hilt-android-compiler:${Versions.dagger_hilt}")
+    implementation("com.google.dagger:hilt-android:2.33-beta")
+    kapt("com.google.dagger:hilt-android-compiler:2.33-beta")
 }
