@@ -3,13 +3,13 @@ import com.github.benmanes.gradle.versions.updates.gradle.GradleReleaseChannel.C
 
 buildscript {
     repositories {
+        mavenCentral()
         google()
-        jcenter()
     }
     dependencies {
         classpath("com.android.tools.build:gradle:4.2.2")
         classpath(kotlin("gradle-plugin", "1.4.32"))
-        classpath("com.google.dagger:hilt-android-gradle-plugin:2.36")
+        classpath("com.google.dagger:hilt-android-gradle-plugin:2.37")
     }
 }
 
@@ -19,8 +19,8 @@ plugins {
 
 allprojects {
     repositories {
+        mavenCentral()
         google()
-        jcenter()
     }
     tasks {
         withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
@@ -68,6 +68,6 @@ tasks.named<DependencyUpdatesTask>("dependencyUpdates") {
 }
 
 tasks.wrapper {
-    gradleVersion = "6.8.3"
-    distributionType = Wrapper.DistributionType.ALL
+    gradleVersion = "7.1"
+    distributionType = Wrapper.DistributionType.BIN
 }
