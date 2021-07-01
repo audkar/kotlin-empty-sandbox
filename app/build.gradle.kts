@@ -50,7 +50,7 @@ dependencies {
     kapt("com.google.dagger:hilt-android-compiler:2.33-beta")
     debugImplementation("com.squareup.leakcanary:leakcanary-android:2.7")
 
-    testImplementation("androidx.test:core:1.3.0")
+    testImplementation("androidx.test:core:1.4.0")
     testImplementation("androidx.test:runner:1.3.0")
     testImplementation("androidx.test:rules:1.3.0")
     testImplementation("androidx.test.ext:junit:1.1.2")
