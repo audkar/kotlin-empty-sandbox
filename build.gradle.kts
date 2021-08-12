@@ -8,7 +8,7 @@ buildscript {
     }
     dependencies {
         classpath("com.android.tools.build:gradle:4.2.2")
-        classpath(kotlin("gradle-plugin", "1.4.32"))
+        classpath(kotlin("gradle-plugin", "1.5.21"))
         classpath("com.google.dagger:hilt-android-gradle-plugin:2.38.1")
     }
 }
@@ -68,6 +68,6 @@ tasks.named<DependencyUpdatesTask>("dependencyUpdates") {
 }
 
 tasks.wrapper {
-    gradleVersion = "7.1"
+    gradleVersion = "7.1.1"
     distributionType = Wrapper.DistributionType.BIN
 }
