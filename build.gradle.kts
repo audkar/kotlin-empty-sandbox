@@ -1,6 +1,3 @@
-import com.github.benmanes.gradle.versions.updates.DependencyUpdatesTask
-import com.github.benmanes.gradle.versions.updates.gradle.GradleReleaseChannel.CURRENT
-
 buildscript {
     repositories {
         mavenCentral()
@@ -8,13 +5,9 @@ buildscript {
     }
     dependencies {
         classpath("com.android.tools.build:gradle:7.0.3")
-        classpath(kotlin("gradle-plugin", "1.5.30"))
-        classpath("com.google.dagger:hilt-android-gradle-plugin:2.38.1")
+        classpath(kotlin("gradle-plugin", "1.5.31"))
+        classpath("com.google.dagger:hilt-android-gradle-plugin:2.40")
     }
-}
-
-plugins {
-    id("com.github.ben-manes.versions") version "0.39.0"
 }
 
 allprojects {
@@ -44,27 +37,6 @@ fun isNonStable(version: String): Boolean {
     val regex = "^[0-9,.v-]+(-r)?$".toRegex()
     val isStable = stableKeyword || regex.matches(version)
     return isStable.not()
-}
-
-tasks.named<DependencyUpdatesTask>("dependencyUpdates") {
-    fun isNonStable(version: String): Boolean {
-        val stableKeyword =
-            listOf("FINAL", "GA").any { version.toUpperCase().contains(it) }
-        val regex = "^[0-9,.v-]+(-r)?$".toRegex()
-        val isStable = stableKeyword || regex.matches(version)
-        return isStable.not()
-    }
-    resolutionStrategy {
-        componentSelection {
-            all {
-                if (isNonStable(candidate.version) && !isNonStable(currentVersion)) {
-                    reject("Release candidate")
-                }
-            }
-        }
-    }
-    checkForGradleUpdate = true
-    gradleReleaseChannel = CURRENT.id
 }
 
 tasks.wrapper {

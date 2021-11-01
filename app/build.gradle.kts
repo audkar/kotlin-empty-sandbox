@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    compileSdk = 30
+    compileSdk = 31
     defaultConfig {
         applicationId = "com.audkrs.emptyandroid"
         minSdk = 21
-        targetSdk = 30
+        targetSdk = 31
         versionCode = 1
         versionName = "1.0"
         testInstrumentationRunner = "com.audkrs.emptyandroid.TestRunner"
@@ -52,8 +52,8 @@ dependencies {
     implementation("androidx.recyclerview:recyclerview:1.2.1")
     implementation("androidx.core:core-ktx:1.6.0")
     implementation ("androidx.fragment:fragment-ktx:1.3.6")
-    implementation("com.google.dagger:hilt-android:2.38.1")
-    kapt("com.google.dagger:hilt-android-compiler:2.38.1")
+    implementation("com.google.dagger:hilt-android:2.40")
+    kapt("com.google.dagger:hilt-android-compiler:2.40")
     debugImplementation("com.squareup.leakcanary:leakcanary-android:2.7")
 
     testImplementation("androidx.test:core:1.4.0")
@@ -64,8 +64,8 @@ dependencies {
     testImplementation("com.google.truth:truth:1.1.3")
     testImplementation("androidx.test.espresso:espresso-core:3.4.0")
     testImplementation("org.robolectric:robolectric:4.6.1")
-    testImplementation("com.google.dagger:hilt-android-testing:2.38.1")
-    kaptTest("com.google.dagger:hilt-android-compiler:2.38.1")
+    testImplementation("com.google.dagger:hilt-android-testing:2.40")
+    kaptTest("com.google.dagger:hilt-android-compiler:2.40")
 
     androidTestImplementation("androidx.test:core:1.4.0")
     androidTestImplementation("androidx.test:runner:1.4.0")
@@ -74,8 +74,8 @@ dependencies {
     androidTestImplementation("androidx.test.ext:truth:1.4.0")
     androidTestImplementation("com.google.truth:truth:1.1.3")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
-    androidTestImplementation("com.google.dagger:hilt-android-testing:2.38.1")
-    kaptAndroidTest("com.google.dagger:hilt-android-compiler:2.38.1")
+    androidTestImplementation("com.google.dagger:hilt-android-testing:2.40")
+    kaptAndroidTest("com.google.dagger:hilt-android-compiler:2.40")
 }
 
 configurations.all {
