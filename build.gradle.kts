@@ -4,9 +4,9 @@ buildscript {
         google()
     }
     dependencies {
-        classpath("com.android.tools.build:gradle:7.0.3")
-        classpath(kotlin("gradle-plugin", "1.5.31"))
-        classpath("com.google.dagger:hilt-android-gradle-plugin:2.40")
+        classpath("com.android.tools.build:gradle:7.0.4")
+        classpath(kotlin("gradle-plugin", "1.6.10"))
+        classpath("com.google.dagger:hilt-android-gradle-plugin:2.40.5")
     }
 }
 
@@ -37,9 +37,4 @@ fun isNonStable(version: String): Boolean {
     val regex = "^[0-9,.v-]+(-r)?$".toRegex()
     val isStable = stableKeyword || regex.matches(version)
     return isStable.not()
-}
-
-tasks.wrapper {
-    gradleVersion = "7.2"
-    distributionType = Wrapper.DistributionType.BIN
 }
