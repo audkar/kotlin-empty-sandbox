@@ -38,5 +38,5 @@ dependencies {
     implementation("androidx.core:core-ktx:1.7.0")
     implementation("androidx.fragment:fragment-ktx:1.4.1")
     implementation("com.google.dagger:hilt-android:2.41")
-    kapt("com.google.dagger:hilt-android-compiler:2.40.5")
+    kapt("com.google.dagger:hilt-android-compiler:2.41")
 }

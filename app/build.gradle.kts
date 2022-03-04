@@ -53,7 +53,7 @@ dependencies {
     implementation("androidx.core:core-ktx:1.7.0")
     implementation ("androidx.fragment:fragment-ktx:1.4.1")
     implementation("com.google.dagger:hilt-android:2.41")
-    kapt("com.google.dagger:hilt-android-compiler:2.40.5")
+    kapt("com.google.dagger:hilt-android-compiler:2.41")
     debugImplementation("com.squareup.leakcanary:leakcanary-android:2.8.1")
 
     testImplementation("androidx.test:core:1.4.0")
@@ -65,7 +65,7 @@ dependencies {
     testImplementation("androidx.test.espresso:espresso-core:3.4.0")
     testImplementation("org.robolectric:robolectric:4.7.3")
     testImplementation("com.google.dagger:hilt-android-testing:2.41")
-    kaptTest("com.google.dagger:hilt-android-compiler:2.40.5")
+    kaptTest("com.google.dagger:hilt-android-compiler:2.41")
 
     androidTestImplementation("androidx.test:core:1.4.0")
     androidTestImplementation("androidx.test:runner:1.4.0")
@@ -75,7 +75,7 @@ dependencies {
     androidTestImplementation("com.google.truth:truth:1.1.3")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
     androidTestImplementation("com.google.dagger:hilt-android-testing:2.41")
-    kaptAndroidTest("com.google.dagger:hilt-android-compiler:2.40.5")
+    kaptAndroidTest("com.google.dagger:hilt-android-compiler:2.41")
 }
 
 configurations.all {
