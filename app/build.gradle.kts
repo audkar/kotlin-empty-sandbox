@@ -54,7 +54,7 @@ dependencies {
     implementation ("androidx.fragment:fragment-ktx:1.4.1")
     implementation("com.google.dagger:hilt-android:2.41")
     kapt("com.google.dagger:hilt-android-compiler:2.41")
-    debugImplementation("com.squareup.leakcanary:leakcanary-android:2.8.1")
+    debugImplementation("com.squareup.leakcanary:leakcanary-android:2.9.1")
 
     testImplementation("androidx.test:core:1.4.0")
     testImplementation("androidx.test:runner:1.4.0")
