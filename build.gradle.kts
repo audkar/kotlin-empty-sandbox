@@ -4,9 +4,9 @@ buildscript {
         google()
     }
     dependencies {
-        classpath("com.android.tools.build:gradle:7.1.2")
-        classpath(kotlin("gradle-plugin", "1.6.10"))
-        classpath("com.google.dagger:hilt-android-gradle-plugin:2.41")
+        classpath("com.android.tools.build:gradle:7.2.1")
+        classpath(kotlin("gradle-plugin", "1.7.0"))
+        classpath("com.google.dagger:hilt-android-gradle-plugin:2.42")
     }
 }
 
@@ -30,11 +30,4 @@ allprojects {
             }
         }
     }
-}
-
-fun isNonStable(version: String): Boolean {
-    val stableKeyword = listOf("FINAL", "GA").any { version.toUpperCase().contains(it) }
-    val regex = "^[0-9,.v-]+(-r)?$".toRegex()
-    val isStable = stableKeyword || regex.matches(version)
-    return isStable.not()
 }
