@@ -1,32 +1,14 @@
 package com.audkrs.emptyandroid
 
-import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.audkrs.emptyandroid.databinding.ActivityMainBinding
-import com.audkrs.emptyandroid.main.Bazinga
+import androidx.navigation.findNavController
 import dagger.hilt.android.AndroidEntryPoint
-import javax.inject.Inject
 
 @AndroidEntryPoint
-class MainActivity : AppCompatActivity() {
-
-    @Inject
-    lateinit var bazinga: Bazinga
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        with(ActivityMainBinding.inflate(layoutInflater)) {
-            clickMe.setOnClickListener {
-                helloText.text = bazinga.haaa()
-            }
-            setContentView(root)
-        }
-    }
+class MainActivity : AppCompatActivity(R.layout.activity_main) {
 
     override fun onBackPressed() {
-        if(supportFragmentManager.backStackEntryCount > 0) {
-           supportFragmentManager.popBackStack()
-        } else {
+        if (!findNavController(R.id.nav_host_fragment).popBackStack()) {
             super.onBackPressed()
         }
     }
