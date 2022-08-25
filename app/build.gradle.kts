@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    compileSdk = 32
+    compileSdk = 33
     defaultConfig {
         applicationId = "com.audkrs.emptyandroid"
         minSdk = 21
-        targetSdk = 32
+        targetSdk = 33
         versionCode = 1
         versionName = "1.0"
         testInstrumentationRunner = "com.audkrs.emptyandroid.TestRunner"
@@ -44,7 +44,7 @@ kotlin {
 
 dependencies {
     implementation(project(":main"))
-    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:1.1.5")
+    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:1.1.8")
     implementation("androidx.appcompat:appcompat:1.5.0")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
     implementation("androidx.annotation:annotation:1.4.0")
@@ -63,7 +63,7 @@ dependencies {
     testImplementation("androidx.test.ext:truth:1.4.0")
     testImplementation("com.google.truth:truth:1.1.3")
     testImplementation("androidx.test.espresso:espresso-core:3.4.0")
-    testImplementation("org.robolectric:robolectric:4.8.1")
+    testImplementation("org.robolectric:robolectric:4.8.2")
     testImplementation("com.google.dagger:hilt-android-testing:2.43.2")
     kaptTest("com.google.dagger:hilt-android-compiler:2.43.2")
 
