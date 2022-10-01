@@ -47,7 +47,7 @@ dependencies {
     coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:1.1.8")
     implementation("androidx.appcompat:appcompat:1.5.0")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
-    implementation("androidx.annotation:annotation:1.4.0")
+    implementation("androidx.annotation:annotation:1.5.0")
     implementation("com.google.android.material:material:1.6.1")
     implementation("androidx.recyclerview:recyclerview:1.2.1")
     implementation("androidx.core:core-ktx:1.8.0")
