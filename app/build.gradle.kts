@@ -52,7 +52,7 @@ dependencies {
     implementation("androidx.recyclerview:recyclerview:1.2.1")
     implementation("androidx.core:core-ktx:1.8.0")
     implementation ("androidx.fragment:fragment-ktx:1.5.2")
-    implementation("com.google.dagger:hilt-android:2.43.2")
+    implementation("com.google.dagger:hilt-android:2.44")
     kapt("com.google.dagger:hilt-android-compiler:2.43.2")
     debugImplementation("com.squareup.leakcanary:leakcanary-android:2.9.1")
 
