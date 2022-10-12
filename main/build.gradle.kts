@@ -31,7 +31,7 @@ kotlin {
 }
 
 dependencies {
-    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:1.2.2")
+    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.0.0")
     implementation("androidx.appcompat:appcompat:1.5.1")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
     implementation("androidx.annotation:annotation:1.5.0")
