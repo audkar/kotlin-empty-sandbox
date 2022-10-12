@@ -7,6 +7,7 @@ plugins {
 
 android {
     compileSdk = 33
+    namespace = "com.audkrs.emptyandroid"
     defaultConfig {
         applicationId = "com.audkrs.emptyandroid"
         minSdk = 21
@@ -44,16 +45,16 @@ kotlin {
 
 dependencies {
     implementation(project(":main"))
-    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:1.1.8")
-    implementation("androidx.appcompat:appcompat:1.5.0")
+    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:1.2.2")
+    implementation("androidx.appcompat:appcompat:1.5.1")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
-    implementation("androidx.annotation:annotation:1.4.0")
+    implementation("androidx.annotation:annotation:1.5.0")
     implementation("com.google.android.material:material:1.6.1")
     implementation("androidx.recyclerview:recyclerview:1.2.1")
-    implementation("androidx.core:core-ktx:1.8.0")
-    implementation ("androidx.fragment:fragment-ktx:1.5.2")
-    implementation("com.google.dagger:hilt-android:2.43.2")
-    kapt("com.google.dagger:hilt-android-compiler:2.43.2")
+    implementation("androidx.core:core-ktx:1.9.0")
+    implementation ("androidx.fragment:fragment-ktx:1.5.3")
+    implementation("com.google.dagger:hilt-android:2.44")
+    kapt("com.google.dagger:hilt-android-compiler:2.44")
     debugImplementation("com.squareup.leakcanary:leakcanary-android:2.9.1")
 
     testImplementation("androidx.test:core:1.4.0")
@@ -63,9 +64,9 @@ dependencies {
     testImplementation("androidx.test.ext:truth:1.4.0")
     testImplementation("com.google.truth:truth:1.1.3")
     testImplementation("androidx.test.espresso:espresso-core:3.4.0")
-    testImplementation("org.robolectric:robolectric:4.8.2")
-    testImplementation("com.google.dagger:hilt-android-testing:2.43.2")
-    kaptTest("com.google.dagger:hilt-android-compiler:2.43.2")
+    testImplementation("org.robolectric:robolectric:4.9")
+    testImplementation("com.google.dagger:hilt-android-testing:2.44")
+    kaptTest("com.google.dagger:hilt-android-compiler:2.44")
 
     androidTestImplementation("androidx.test:core:1.4.0")
     androidTestImplementation("androidx.test:runner:1.4.0")
@@ -74,8 +75,8 @@ dependencies {
     androidTestImplementation("androidx.test.ext:truth:1.4.0")
     androidTestImplementation("com.google.truth:truth:1.1.3")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
-    androidTestImplementation("com.google.dagger:hilt-android-testing:2.43.2")
-    kaptAndroidTest("com.google.dagger:hilt-android-compiler:2.43.2")
+    androidTestImplementation("com.google.dagger:hilt-android-testing:2.44")
+    kaptAndroidTest("com.google.dagger:hilt-android-compiler:2.44")
 }
 
 configurations.all {
