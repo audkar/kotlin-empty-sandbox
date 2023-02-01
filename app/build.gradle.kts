@@ -59,7 +59,7 @@ dependencies {
     debugImplementation("com.squareup.leakcanary:leakcanary-android:2.10")
 
     testImplementation("androidx.test:core:1.5.0")
-    testImplementation("androidx.test:runner:1.5.1")
+    testImplementation("androidx.test:runner:1.5.2")
     testImplementation("androidx.test:rules:1.5.0")
     testImplementation("androidx.test.ext:junit:1.1.4")
     testImplementation("androidx.test.ext:truth:1.5.0")
