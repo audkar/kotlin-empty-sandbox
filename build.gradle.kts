@@ -4,9 +4,9 @@ buildscript {
         google()
     }
     dependencies {
-        classpath("com.android.tools.build:gradle:7.3.1")
-        classpath(kotlin("gradle-plugin", "1.7.22"))
-        classpath("com.google.dagger:hilt-android-gradle-plugin:2.44.2")
+        classpath("com.android.tools.build:gradle:7.4.1")
+        classpath(kotlin("gradle-plugin", "1.8.10"))
+        classpath("com.google.dagger:hilt-android-gradle-plugin:2.45")
     }
 }
 
@@ -21,7 +21,6 @@ allprojects {
                 freeCompilerArgs = listOf(
                     "-progressive",
                     "-opt-in=" +
-                            "kotlin.Experimental," +
                             "kotlinx.coroutines.ExperimentalCoroutinesApi," +
                             "kotlinx.coroutines.FlowPreview," +
                             "kotlin.time.ExperimentalTime"
