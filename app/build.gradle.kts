@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     kotlin("android")
+    id("kotlin-parcelize")
     id("kotlin-kapt")
     id("dagger.hilt.android.plugin")
 }
@@ -31,7 +32,10 @@ android {
         targetCompatibility = JavaVersion.VERSION_11
     }
     buildFeatures {
-        viewBinding = true
+        compose = true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.4.2"
     }
 }
 
@@ -44,19 +48,27 @@ kotlin {
 }
 
 dependencies {
+    val composeBom = platform("androidx.compose:compose-bom:2022.12.00")
+
     implementation(project(":main"))
     coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.0.2")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
     implementation("androidx.annotation:annotation:1.5.0")
-    implementation("com.google.android.material:material:1.8.0")
-    implementation("androidx.recyclerview:recyclerview:1.2.1")
     implementation("androidx.core:core-ktx:1.9.0")
-    implementation ("androidx.fragment:fragment-ktx:1.5.5")
     implementation("androidx.activity:activity-ktx:1.6.1")
     implementation("com.google.dagger:hilt-android:2.45")
     kapt("com.google.dagger:hilt-android-compiler:2.45")
     debugImplementation("com.squareup.leakcanary:leakcanary-android:2.10")
+    //Compose
+    implementation(composeBom)
+    implementation("androidx.compose.material3:material3")
+    implementation("androidx.compose.ui:ui-tooling-preview")
+    debugImplementation("androidx.compose.ui:ui-tooling")
+    debugImplementation("androidx.compose.ui:ui-test-manifest")
+    implementation("androidx.compose.material:material-icons-core")
+    implementation("androidx.activity:activity-compose:1.6.1")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1")
 
     testImplementation("androidx.test:core:1.5.0")
     testImplementation("androidx.test:runner:1.5.2")
@@ -78,6 +90,8 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     androidTestImplementation("com.google.dagger:hilt-android-testing:2.45")
     kaptAndroidTest("com.google.dagger:hilt-android-compiler:2.45")
+    androidTestImplementation(composeBom)
+    androidTestImplementation("androidx.compose.ui:ui-test-junit4")
 }
 
 configurations.all {
