@@ -57,8 +57,8 @@ dependencies {
     implementation("androidx.annotation:annotation:1.6.0")
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.activity:activity-ktx:1.6.1")
-    implementation("com.google.dagger:hilt-android:2.45")
-    kapt("com.google.dagger:hilt-android-compiler:2.45")
+    implementation("com.google.dagger:hilt-android:2.46")
+    kapt("com.google.dagger:hilt-android-compiler:2.46")
     debugImplementation("com.squareup.leakcanary:leakcanary-android:2.10")
     //Compose
     implementation(composeBom)
@@ -75,8 +75,8 @@ dependencies {
     testImplementation("androidx.test.ext:truth:1.5.0")
     testImplementation("com.google.truth:truth:1.1.3")
     testImplementation("org.robolectric:robolectric:4.9.2")
-    testImplementation("com.google.dagger:hilt-android-testing:2.45")
-    kaptTest("com.google.dagger:hilt-android-compiler:2.45")
+    testImplementation("com.google.dagger:hilt-android-testing:2.46")
+    kaptTest("com.google.dagger:hilt-android-compiler:2.46")
     testImplementation(composeBom)
     testImplementation("androidx.compose.ui:ui-test-junit4")
 
@@ -86,8 +86,8 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.ext:truth:1.5.0")
     androidTestImplementation("com.google.truth:truth:1.1.3")
-    androidTestImplementation("com.google.dagger:hilt-android-testing:2.45")
-    kaptAndroidTest("com.google.dagger:hilt-android-compiler:2.45")
+    androidTestImplementation("com.google.dagger:hilt-android-testing:2.46")
+    kaptAndroidTest("com.google.dagger:hilt-android-compiler:2.46")
     androidTestImplementation(composeBom)
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
 }
