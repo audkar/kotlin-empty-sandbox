@@ -70,7 +70,7 @@ dependencies {
     implementation("androidx.activity:activity-compose:1.6.1")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1")
     implementation("org.jetbrains.kotlinx:kotlinx-collections-immutable:0.3.5")
-    lintChecks("com.slack.lint.compose:compose-lint-checks:1.0.0")
+    lintChecks("com.slack.lint.compose:compose-lint-checks:1.2.0")
 
     testImplementation("androidx.test.ext:truth:1.5.0")
     testImplementation("com.google.truth:truth:1.1.3")
