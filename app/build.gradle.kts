@@ -35,7 +35,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.4.2"
+        kotlinCompilerExtensionVersion = "1.4.7"
     }
 }
 
@@ -48,17 +48,17 @@ kotlin {
 }
 
 dependencies {
-    val composeBom = platform("androidx.compose:compose-bom:2022.12.00")
+    val composeBom = platform("androidx.compose:compose-bom:2023.05.01")
 
     implementation(project(":main"))
-    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.0.2")
+    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.0.3")
     implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1")
     implementation("androidx.annotation:annotation:1.6.0")
-    implementation("androidx.core:core-ktx:1.9.0")
-    implementation("androidx.activity:activity-ktx:1.6.1")
-    implementation("com.google.dagger:hilt-android:2.45")
-    kapt("com.google.dagger:hilt-android-compiler:2.45")
+    implementation("androidx.core:core-ktx:1.10.1")
+    implementation("androidx.activity:activity-ktx:1.7.1")
+    implementation("com.google.dagger:hilt-android:2.46.1")
+    kapt("com.google.dagger:hilt-android-compiler:2.46.1")
     debugImplementation("com.squareup.leakcanary:leakcanary-android:2.10")
     //Compose
     implementation(composeBom)
@@ -67,16 +67,16 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
     implementation("androidx.compose.material:material-icons-core")
-    implementation("androidx.activity:activity-compose:1.6.1")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1")
+    implementation("androidx.activity:activity-compose:1.7.1")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.1")
     implementation("org.jetbrains.kotlinx:kotlinx-collections-immutable:0.3.5")
-    lintChecks("com.slack.lint.compose:compose-lint-checks:1.0.0")
+    lintChecks("com.slack.lint.compose:compose-lint-checks:1.2.0")
 
     testImplementation("androidx.test.ext:truth:1.5.0")
     testImplementation("com.google.truth:truth:1.1.3")
-    testImplementation("org.robolectric:robolectric:4.9.2")
-    testImplementation("com.google.dagger:hilt-android-testing:2.45")
-    kaptTest("com.google.dagger:hilt-android-compiler:2.45")
+    testImplementation("org.robolectric:robolectric:4.10.2")
+    testImplementation("com.google.dagger:hilt-android-testing:2.46.1")
+    kaptTest("com.google.dagger:hilt-android-compiler:2.46.1")
     testImplementation(composeBom)
     testImplementation("androidx.compose.ui:ui-test-junit4")
 
@@ -86,8 +86,8 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.ext:truth:1.5.0")
     androidTestImplementation("com.google.truth:truth:1.1.3")
-    androidTestImplementation("com.google.dagger:hilt-android-testing:2.45")
-    kaptAndroidTest("com.google.dagger:hilt-android-compiler:2.45")
+    androidTestImplementation("com.google.dagger:hilt-android-testing:2.46.1")
+    kaptAndroidTest("com.google.dagger:hilt-android-compiler:2.46.1")
     androidTestImplementation(composeBom)
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
 }
