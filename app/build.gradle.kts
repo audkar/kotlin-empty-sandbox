@@ -73,7 +73,7 @@ dependencies {
     lintChecks("com.slack.lint.compose:compose-lint-checks:1.2.0")
 
     testImplementation("androidx.test.ext:truth:1.5.0")
-    testImplementation("com.google.truth:truth:1.1.3")
+    testImplementation("com.google.truth:truth:1.1.4")
     testImplementation("org.robolectric:robolectric:4.10.2")
     testImplementation("com.google.dagger:hilt-android-testing:2.46.1")
     kaptTest("com.google.dagger:hilt-android-compiler:2.46.1")
@@ -85,7 +85,7 @@ dependencies {
     androidTestImplementation("androidx.test:rules:1.5.0")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.ext:truth:1.5.0")
-    androidTestImplementation("com.google.truth:truth:1.1.3")
+    androidTestImplementation("com.google.truth:truth:1.1.4")
     androidTestImplementation("com.google.dagger:hilt-android-testing:2.46.1")
     kaptAndroidTest("com.google.dagger:hilt-android-compiler:2.46.1")
     androidTestImplementation(composeBom)
