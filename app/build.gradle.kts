@@ -59,7 +59,7 @@ dependencies {
     implementation("androidx.activity:activity-ktx:1.7.1")
     implementation("com.google.dagger:hilt-android:2.46.1")
     kapt("com.google.dagger:hilt-android-compiler:2.46.1")
-    debugImplementation("com.squareup.leakcanary:leakcanary-android:2.10")
+    debugImplementation("com.squareup.leakcanary:leakcanary-android:2.11")
     //Compose
     implementation(composeBom)
     implementation("androidx.compose.material3:material3")
