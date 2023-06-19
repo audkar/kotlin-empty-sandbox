@@ -25,7 +25,7 @@ allprojects {
                             "kotlinx.coroutines.FlowPreview," +
                             "kotlin.time.ExperimentalTime"
                 )
-                jvmTarget = "11"
+                jvmTarget = "17"
             }
         }
     }
