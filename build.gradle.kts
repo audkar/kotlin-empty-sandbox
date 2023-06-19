@@ -4,7 +4,7 @@ buildscript {
         google()
     }
     dependencies {
-        classpath("com.android.tools.build:gradle:8.0.1")
+        classpath("com.android.tools.build:gradle:8.0.2")
         classpath(kotlin("gradle-plugin", "1.8.21"))
         classpath("com.google.dagger:hilt-android-gradle-plugin:2.46.1")
     }
