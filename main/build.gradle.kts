@@ -20,7 +20,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.4.7"
+        kotlinCompilerExtensionVersion = "1.4.8"
     }
 }
 
@@ -33,7 +33,7 @@ kotlin {
 }
 
 dependencies {
-    val composeBom = platform("androidx.compose:compose-bom:2023.06.00")
+    val composeBom = platform("androidx.compose:compose-bom:2023.06.01")
 
     coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.0.3")
     implementation("androidx.appcompat:appcompat:1.6.1")
