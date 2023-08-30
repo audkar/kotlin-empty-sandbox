@@ -1,8 +1,8 @@
 plugins {
     id("com.android.library")
     kotlin("android")
-    id("kotlin-kapt")
-    id("dagger.hilt.android.plugin")
+    id("com.google.devtools.ksp")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -41,7 +41,7 @@ dependencies {
     implementation("androidx.annotation:annotation:1.6.0")
     implementation("androidx.core:core-ktx:1.10.1")
     implementation("com.google.dagger:hilt-android:2.48")
-    kapt("com.google.dagger:hilt-android-compiler:2.48")
+    ksp("com.google.dagger:hilt-android-compiler:2.48")
 
     //Compose
     implementation(composeBom)
