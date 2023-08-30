@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    compileSdk = 33
+    compileSdk = 34
     namespace = "com.audkrs.emptyandroid.main"
     defaultConfig {
         minSdk = 21
@@ -20,7 +20,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.4.8"
+        kotlinCompilerExtensionVersion = "1.5.3"
     }
 }
 
@@ -33,15 +33,15 @@ kotlin {
 }
 
 dependencies {
-    val composeBom = platform("androidx.compose:compose-bom:2023.06.01")
+    val composeBom = platform("androidx.compose:compose-bom:2023.08.00")
 
     coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.0.3")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
     implementation("androidx.annotation:annotation:1.6.0")
     implementation("androidx.core:core-ktx:1.10.1")
-    implementation("com.google.dagger:hilt-android:2.46.1")
-    kapt("com.google.dagger:hilt-android-compiler:2.46.1")
+    implementation("com.google.dagger:hilt-android:2.48")
+    kapt("com.google.dagger:hilt-android-compiler:2.48")
 
     //Compose
     implementation(composeBom)
