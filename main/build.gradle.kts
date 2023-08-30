@@ -41,7 +41,7 @@ dependencies {
     implementation("androidx.annotation:annotation:1.6.0")
     implementation("androidx.core:core-ktx:1.10.1")
     implementation("com.google.dagger:hilt-android:2.46.1")
-    kapt("com.google.dagger:hilt-android-compiler:2.46.1")
+    kapt("com.google.dagger:hilt-android-compiler:2.48")
 
     //Compose
     implementation(composeBom)
