@@ -35,7 +35,6 @@ class MainActivity : AppCompatActivity() {
     @Inject
     lateinit var bazinga: Bazinga
 
-    @OptIn(ExperimentalMaterial3Api::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
