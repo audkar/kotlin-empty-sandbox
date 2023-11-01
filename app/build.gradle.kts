@@ -74,7 +74,7 @@ dependencies {
 
     testImplementation("androidx.test.ext:truth:1.5.0")
     testImplementation("com.google.truth:truth:1.1.5")
-    testImplementation("org.robolectric:robolectric:4.10.3")
+    testImplementation("org.robolectric:robolectric:4.11.1")
     testImplementation("com.google.dagger:hilt-android-testing:2.48.1")
     kspTest("com.google.dagger:hilt-android-compiler:2.48.1")
     testImplementation(composeBom)
