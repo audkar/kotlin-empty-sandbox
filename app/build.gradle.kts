@@ -31,27 +31,22 @@ android {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
+    kotlinOptions {
+        jvmTarget = "17"
+    }
     buildFeatures {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.3"
-    }
-}
-
-kotlin {
-    target.compilations.all {
-        kotlinOptions {
-            jvmTarget = "17"
-        }
+        kotlinCompilerExtensionVersion = "1.5.4"
     }
 }
 
 dependencies {
-    val composeBom = platform("androidx.compose:compose-bom:2023.10.00")
+    val composeBom = platform("androidx.compose:compose-bom:2023.10.01")
 
     implementation(project(":main"))
-    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.0.3")
+    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.0.4")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
     implementation("androidx.annotation:annotation:1.7.0")
@@ -72,14 +67,16 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-collections-immutable:0.3.6")
     lintChecks("com.slack.lint.compose:compose-lint-checks:1.2.0")
 
+    testImplementation("junit:junit:4.13.2")
     testImplementation("androidx.test.ext:truth:1.5.0")
     testImplementation("com.google.truth:truth:1.1.5")
-    testImplementation("org.robolectric:robolectric:4.10.3")
+    testImplementation("org.robolectric:robolectric:4.11.1")
     testImplementation("com.google.dagger:hilt-android-testing:2.48.1")
     kspTest("com.google.dagger:hilt-android-compiler:2.48.1")
     testImplementation(composeBom)
     testImplementation("androidx.compose.ui:ui-test-junit4")
 
+    androidTestImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test:core:1.5.0")
     androidTestImplementation("androidx.test:runner:1.5.2")
     androidTestImplementation("androidx.test:rules:1.5.0")
@@ -90,10 +87,4 @@ dependencies {
     kspAndroidTest("com.google.dagger:hilt-android-compiler:2.48.1")
     androidTestImplementation(composeBom)
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
-}
-
-configurations.all {
-    resolutionStrategy.dependencySubstitution {
-      substitute(module("junit:junit:4.12")).using(module("junit:junit:4.13"))
-    }
 }
