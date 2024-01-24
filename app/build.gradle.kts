@@ -63,7 +63,7 @@ dependencies {
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.activity:activity-ktx:1.8.1")
     implementation("com.google.dagger:hilt-android:2.49")
-    ksp("com.google.dagger:hilt-android-compiler:2.49")
+    ksp("com.google.dagger:hilt-android-compiler:2.50")
     debugImplementation("com.squareup.leakcanary:leakcanary-android:2.12")
     //Compose
     implementation(composeBom)
@@ -82,7 +82,7 @@ dependencies {
     testImplementation("com.google.truth:truth:1.2.0")
     testImplementation("org.robolectric:robolectric:4.11.1")
     testImplementation("com.google.dagger:hilt-android-testing:2.49")
-    kspTest("com.google.dagger:hilt-android-compiler:2.49")
+    kspTest("com.google.dagger:hilt-android-compiler:2.50")
     testImplementation(composeBom)
     testImplementation("androidx.compose.ui:ui-test-junit4")
 
@@ -94,7 +94,7 @@ dependencies {
     androidTestImplementation("androidx.test.ext:truth:1.5.0")
     androidTestImplementation("com.google.truth:truth:1.2.0")
     androidTestImplementation("com.google.dagger:hilt-android-testing:2.49")
-    kspAndroidTest("com.google.dagger:hilt-android-compiler:2.49")
+    kspAndroidTest("com.google.dagger:hilt-android-compiler:2.50")
     androidTestImplementation(composeBom)
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
 }
