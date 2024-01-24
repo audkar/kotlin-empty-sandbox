@@ -23,27 +23,25 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.8"
+        kotlinCompilerExtensionVersion = libs.androidx.compose.compiler.get().version
     }
 }
 
 dependencies {
-    val composeBom = platform("androidx.compose:compose-bom:2024.01.00")
-
-    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.0.4")
-    implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
-    implementation("androidx.annotation:annotation:1.7.1")
-    implementation("androidx.core:core-ktx:1.12.0")
-    implementation("com.google.dagger:hilt-android:2.50")
-    ksp("com.google.dagger:hilt-android-compiler:2.50")
+    coreLibraryDesugaring(libs.com.android.tools.desugar.jdk.libs)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.org.jetbrains.kotlinx.kotlinx.coroutines.android)
+    implementation(libs.androidx.annotation)
+    implementation(libs.androidx.core.core.ktx)
+    implementation(libs.com.google.dagger.hilt.android)
+    ksp(libs.com.google.dagger.hilt.android.compiler)
 
     //Compose
-    implementation(composeBom)
-    implementation("androidx.compose.material3:material3")
-    implementation("androidx.compose.ui:ui-tooling-preview")
-    debugImplementation("androidx.compose.ui:ui-tooling")
-    implementation("androidx.compose.material:material-icons-core")
-    implementation("androidx.activity:activity-compose:1.8.2")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0")
+    implementation(platform(libs.androidx.compose.compose.bom))
+    implementation(libs.androidx.compose.material3)
+    implementation(libs.androidx.compose.ui.ui.tooling.preview)
+    debugImplementation(libs.androidx.compose.ui.ui.tooling)
+    implementation(libs.androidx.compose.material.material.icons.core)
+    implementation(libs.androidx.activity.activity.compose)
+    implementation(libs.androidx.lifecycle.lifecycle.viewmodel.compose)
 }
