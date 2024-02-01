@@ -17,9 +17,9 @@ androidx-compose-compiler = "androidx.compose.compiler:compiler:1.5.8"
 androidx-compose-compose-bom = "androidx.compose:compose-bom:2024.01.00"
 androidx-compose-material-material-icons-core = "androidx.compose.material:material-icons-core:1.6.0"
 androidx-compose-material3 = { module = "androidx.compose.material3:material3" }
-androidx-compose-ui-ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
-androidx-compose-ui-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest" }
 androidx-compose-ui-ui-test-junit4 = { module = "androidx.compose.ui:ui-test-junit4" }
+androidx-compose-ui-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest" }
+androidx-compose-ui-ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
 androidx-compose-ui-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
 androidx-core-core-ktx = { module = "androidx.core:core-ktx", version.ref = "androidx-core" }
 androidx-lifecycle-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "androidx-lifecycle" }
@@ -33,7 +33,7 @@ com-google-dagger-hilt-android = { module = "com.google.dagger:hilt-android", ve
 com-google-dagger-hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "com-google-dagger" }
 com-google-dagger-hilt-android-testing = { module = "com.google.dagger:hilt-android-testing", version.ref = "com-google-dagger" }
 com-google-truth = "com.google.truth:truth:1.3.0"
-com-slack-lint-compose-compose-lint-checks = "com.slack.lint.compose:compose-lint-checks:1.2.0"
+com-slack-lint-compose-compose-lint-checks = "com.slack.lint.compose:compose-lint-checks:1.3.1"
 com-squareup-leakcanary-leakcanary-android = { module = "com.squareup.leakcanary:leakcanary-android", version.ref = "com-squareup-leakcanary" }
 junit = "junit:junit:4.13.2"
 org-jetbrains-kotlinx-kotlinx-collections-immutable = "org.jetbrains.kotlinx:kotlinx-collections-immutable:0.3.7"
@@ -44,5 +44,5 @@ org-robolectric = { module = "org.robolectric:robolectric", version.ref = "org-r
 com-android-application = "com.android.application:8.2.2"
 com-google-dagger-hilt-android = "com.google.dagger.hilt.android:2.50"
 com-google-devtools-ksp = "com.google.devtools.ksp:1.9.22-1.0.17"
-nl-littlerobots-version-catalog-update = "nl.littlerobots.version-catalog-update:0.8.3"
+nl-littlerobots-version-catalog-update = "nl.littlerobots.version-catalog-update:0.8.4"
 org-jetbrains-kotlin-android = "org.jetbrains.kotlin.android:1.9.22"
