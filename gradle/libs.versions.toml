@@ -43,6 +43,6 @@ org-robolectric = { module = "org.robolectric:robolectric", version.ref = "org-r
 [plugins]
 com-android-application = "com.android.application:8.2.2"
 com-google-dagger-hilt-android = "com.google.dagger.hilt.android:2.50"
-com-google-devtools-ksp = "com.google.devtools.ksp:1.9.22-1.0.17"
+com-google-devtools-ksp = "com.google.devtools.ksp:1.9.22-1.0.18"
 nl-littlerobots-version-catalog-update = "nl.littlerobots.version-catalog-update:0.8.4"
 org-jetbrains-kotlin-android = "org.jetbrains.kotlin.android:1.9.22"
