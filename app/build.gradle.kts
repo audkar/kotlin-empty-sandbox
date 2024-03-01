@@ -12,7 +12,8 @@ android {
     defaultConfig {
         applicationId = "com.audkrs.emptyandroid"
         minSdk = 21
-        targetSdk = 34
+        //noinspection ExpiredTargetSdkVersion
+        targetSdk = 31
         versionCode = 1
         versionName = "1.0"
         testInstrumentationRunner = "com.audkrs.emptyandroid.TestRunner"
