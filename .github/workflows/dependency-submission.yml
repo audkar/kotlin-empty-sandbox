@@ -17,3 +17,5 @@ jobs:
         java-version: '21'
     - name: Generate and submit dependency graph
       uses: gradle/actions/dependency-submission@v3
+      env:
+        DEPENDENCY_GRAPH_EXCLUDE_CONFIGURATIONS: 'settings.gradle.kts'
