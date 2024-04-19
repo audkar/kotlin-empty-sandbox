@@ -1,21 +1,21 @@
 [versions]
-androidx-activity = "1.8.2"
-androidx-core = "1.12.0"
+androidx-activity = "1.9.0"
+androidx-core = "1.13.0"
 androidx-lifecycle = "2.7.0"
 androidx-test = "1.5.0"
-com-google-dagger = "2.51"
-com-squareup-leakcanary = "2.13"
+com-google-dagger = "2.51.1"
+com-squareup-leakcanary = "2.14"
 coroutines = "1.8.0"
-org-robolectric = "4.11.1"
+org-robolectric = "4.12.1"
 
 [libraries]
 androidx-activity-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activity" }
 androidx-activity-activity-ktx = { module = "androidx.activity:activity-ktx", version.ref = "androidx-activity" }
 androidx-annotation = "androidx.annotation:annotation:1.7.1"
 androidx-appcompat = "androidx.appcompat:appcompat:1.6.1"
-androidx-compose-compiler = "androidx.compose.compiler:compiler:1.5.10"
-androidx-compose-compose-bom = "androidx.compose:compose-bom:2024.02.01"
-androidx-compose-material-material-icons-core = "androidx.compose.material:material-icons-core:1.6.2"
+androidx-compose-compiler = "androidx.compose.compiler:compiler:1.5.12"
+androidx-compose-compose-bom = "androidx.compose:compose-bom:2024.04.01"
+androidx-compose-material-material-icons-core = "androidx.compose.material:material-icons-core:1.6.6"
 androidx-compose-material3 = { module = "androidx.compose.material3:material3" }
 androidx-compose-ui-ui-test-junit4 = { module = "androidx.compose.ui:ui-test-junit4" }
 androidx-compose-ui-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest" }
@@ -41,8 +41,8 @@ org-jetbrains-kotlinx-kotlinx-coroutines-android = { module = "org.jetbrains.kot
 org-robolectric = { module = "org.robolectric:robolectric", version.ref = "org-robolectric" }
 
 [plugins]
-com-android-application = "com.android.application:8.3.0"
-com-google-dagger-hilt-android = "com.google.dagger.hilt.android:2.51"
-com-google-devtools-ksp = "com.google.devtools.ksp:1.9.22-1.0.18"
+com-android-application = "com.android.application:8.3.2"
+com-google-dagger-hilt-android = "com.google.dagger.hilt.android:2.51.1"
+com-google-devtools-ksp = "com.google.devtools.ksp:1.9.23-1.0.20"
 nl-littlerobots-version-catalog-update = "nl.littlerobots.version-catalog-update:0.8.4"
-org-jetbrains-kotlin-android = "org.jetbrains.kotlin.android:1.9.22"
+org-jetbrains-kotlin-android = "org.jetbrains.kotlin.android:1.9.23"
