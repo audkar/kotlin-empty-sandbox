@@ -41,7 +41,7 @@ org-jetbrains-kotlinx-kotlinx-coroutines-android = { module = "org.jetbrains.kot
 org-robolectric = { module = "org.robolectric:robolectric", version.ref = "org-robolectric" }
 
 [plugins]
-com-android-application = "com.android.application:8.3.2"
+com-android-application = "com.android.application:8.4.0"
 com-google-dagger-hilt-android = "com.google.dagger.hilt.android:2.51.1"
 com-google-devtools-ksp = "com.google.devtools.ksp:1.9.23-1.0.20"
 nl-littlerobots-version-catalog-update = "nl.littlerobots.version-catalog-update:0.8.4"
