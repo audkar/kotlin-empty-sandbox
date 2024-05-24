@@ -4,6 +4,7 @@ plugins {
     id("kotlin-parcelize")
     id("com.google.devtools.ksp")
     id("com.google.dagger.hilt.android")
+    alias(libs.plugins.org.jetbrains.kotlin.plugin.compose)
 }
 
 android {
@@ -46,9 +47,6 @@ android {
     }
     buildFeatures {
         compose = true
-    }
-    composeOptions {
-        kotlinCompilerExtensionVersion = libs.androidx.compose.compiler.get().version
     }
 }
 
