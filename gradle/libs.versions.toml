@@ -6,7 +6,7 @@ androidx-test = "1.5.0"
 com-google-dagger = "2.51.1"
 com-squareup-leakcanary = "2.14"
 coroutines = "1.8.1"
-org-robolectric = "4.12.1"
+org-robolectric = "4.12.2"
 
 [libraries]
 androidx-activity-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activity" }
