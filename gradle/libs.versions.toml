@@ -26,7 +26,7 @@ androidx-test-core = { module = "androidx.test:core", version.ref = "androidx-te
 androidx-test-ext-junit = "androidx.test.ext:junit:1.1.5"
 androidx-test-ext-truth = "androidx.test.ext:truth:1.5.0"
 androidx-test-rules = { module = "androidx.test:rules", version.ref = "androidx-test" }
-androidx-test-runner = "androidx.test:runner:1.5.2"
+androidx-test-runner = "androidx.test:runner:1.6.1"
 com-android-tools-desugar_jdk_libs = "com.android.tools:desugar_jdk_libs:2.0.4"
 com-google-dagger-hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "com-google-dagger" }
 com-google-dagger-hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "com-google-dagger" }
