@@ -11,7 +11,7 @@ org-robolectric = "4.13"
 [libraries]
 androidx-activity-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activity" }
 androidx-activity-activity-ktx = { module = "androidx.activity:activity-ktx", version.ref = "androidx-activity" }
-androidx-annotation = "androidx.annotation:annotation:1.8.0"
+androidx-annotation = "androidx.annotation:annotation:1.8.1"
 androidx-appcompat = "androidx.appcompat:appcompat:1.7.0"
 androidx-compose-compose-bom = "androidx.compose:compose-bom:2024.06.00"
 androidx-compose-material-material-icons-core = "androidx.compose.material:material-icons-core:1.6.8"
