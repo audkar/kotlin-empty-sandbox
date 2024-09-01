@@ -42,7 +42,7 @@ org-robolectric = { module = "org.robolectric:robolectric", version.ref = "org-r
 [plugins]
 com-android-application = "com.android.application:8.5.2"
 com-google-dagger-hilt-android = "com.google.dagger.hilt.android:2.52"
-com-google-devtools-ksp = "com.google.devtools.ksp:2.0.10-1.0.24"
+com-google-devtools-ksp = "com.google.devtools.ksp:2.0.20-1.0.24"
 nl-littlerobots-version-catalog-update = "nl.littlerobots.version-catalog-update:0.8.4"
 org-jetbrains-kotlin-android = "org.jetbrains.kotlin.android:2.0.10"
 org-jetbrains-kotlin-plugin-compose = "org.jetbrains.kotlin.plugin.compose:2.0.10"
