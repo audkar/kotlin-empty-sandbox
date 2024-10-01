@@ -1,7 +1,7 @@
 [versions]
 androidx-activity = "1.9.2"
 androidx-core = "1.13.1"
-androidx-lifecycle = "2.8.5"
+androidx-lifecycle = "2.8.6"
 androidx-test = "1.6.1"
 com-google-dagger = "2.52"
 com-squareup-leakcanary = "2.14"
