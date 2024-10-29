@@ -61,6 +61,11 @@ dependencies {
     implementation(libs.com.google.dagger.hilt.android)
     ksp(libs.com.google.dagger.hilt.android.compiler)
     debugImplementation(libs.com.squareup.leakcanary.leakcanary.android)
+    constraints {
+        debugImplementation("com.squareup.okio:okio:3.4.0") {
+            because("Version 3.4.0 fixes the Signed to Unsigned Conversion Error vulnerability")
+        }
+    }
     //Compose
     implementation(platform(libs.androidx.compose.compose.bom))
     implementation(libs.androidx.compose.material3)
