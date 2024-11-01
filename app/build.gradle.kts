@@ -62,7 +62,7 @@ dependencies {
     ksp(libs.com.google.dagger.hilt.android.compiler)
     debugImplementation(libs.com.squareup.leakcanary.leakcanary.android)
     constraints {
-        debugImplementation("com.squareup.okio:okio:3.4.0") {
+        debugImplementation("com.squareup.okio:okio:3.9.1") {
             because("Version 3.4.0 fixes the Signed to Unsigned Conversion Error vulnerability")
         }
     }
