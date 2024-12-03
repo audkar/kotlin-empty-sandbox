@@ -8,12 +8,12 @@ plugins {
 }
 
 android {
-    compileSdk = 34
+    compileSdk = 35
     namespace = "com.audkrs.emptyandroid"
     defaultConfig {
         applicationId = "com.audkrs.emptyandroid"
         minSdk = 21
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
         testInstrumentationRunner = "com.audkrs.emptyandroid.TestRunner"

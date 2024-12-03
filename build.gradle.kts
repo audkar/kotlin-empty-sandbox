@@ -9,7 +9,7 @@ plugins {
 allprojects {
     tasks {
         withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
-            kotlinOptions {
+            compilerOptions {
                 freeCompilerArgs = listOf(
                     "-progressive",
                     "-opt-in=" +
@@ -17,7 +17,6 @@ allprojects {
                             "kotlinx.coroutines.FlowPreview," +
                             "kotlin.time.ExperimentalTime"
                 )
-                jvmTarget = "17"
             }
         }
     }

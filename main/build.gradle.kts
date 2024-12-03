@@ -7,7 +7,7 @@ plugins {
 }
 
 android {
-    compileSdk = 34
+    compileSdk = 35
     namespace = "com.audkrs.emptyandroid.main"
     defaultConfig {
         minSdk = 21
