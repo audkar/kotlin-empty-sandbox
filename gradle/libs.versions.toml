@@ -15,7 +15,7 @@ androidx-activity-activity-ktx = { module = "androidx.activity:activity-ktx", ve
 androidx-annotation = "androidx.annotation:annotation:1.9.1"
 androidx-appcompat = "androidx.appcompat:appcompat:1.7.0"
 androidx-compose-compose-bom = "androidx.compose:compose-bom:2024.11.00"
-androidx-compose-material-material-icons-core = "androidx.compose.material:material-icons-core:1.7.5"
+androidx-compose-material-material-icons-core = "androidx.compose.material:material-icons-core:1.7.6"
 androidx-compose-material3 = { module = "androidx.compose.material3:material3" }
 androidx-compose-ui-ui-test-junit4 = { module = "androidx.compose.ui:ui-test-junit4" }
 androidx-compose-ui-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest" }
