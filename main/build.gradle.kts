@@ -32,19 +32,17 @@ kotlin {
 
 dependencies {
     coreLibraryDesugaring(libs.com.android.tools.desugar.jdk.libs)
-    implementation(libs.androidx.appcompat)
+    implementation(androidx.appcompat.appcompat)
     implementation(libs.org.jetbrains.kotlinx.kotlinx.coroutines.android)
-    implementation(libs.androidx.annotation)
-    implementation(libs.androidx.core.core.ktx)
+    implementation(androidx.annotation.annotation)
+    implementation(androidx.core.coreKtx)
     implementation(libs.com.google.dagger.hilt.android)
     ksp(libs.com.google.dagger.hilt.android.compiler)
-
-    //Compose
-    implementation(platform(libs.androidx.compose.compose.bom))
-    implementation(libs.androidx.compose.material3)
-    implementation(libs.androidx.compose.ui.ui.tooling.preview)
-    debugImplementation(libs.androidx.compose.ui.ui.tooling)
-    implementation(libs.androidx.compose.material.material.icons.core)
-    implementation(libs.androidx.activity.activity.compose)
-    implementation(libs.androidx.lifecycle.lifecycle.viewmodel.compose)
+    implementation(platform(androidx.compose.composeBom))
+    implementation(androidx.composeMaterial3.material3)
+    implementation(androidx.composeUi.uiToolingPreview)
+    debugImplementation(androidx.composeUi.uiTooling)
+    implementation(androidx.composeMaterial.materialIconsCore)
+    implementation(androidx.activity.activityCompose)
+    implementation(androidx.lifecycle.lifecycleViewmodelCompose)
 }

@@ -9,7 +9,7 @@ pluginManagement {
 rootProject.name = "kotlin-empty-sandbox"
 
 plugins {
-    id("com.gradle.enterprise") version("3.14.1")
+    id("com.gradle.develocity") version ("4.1")
 }
 
 dependencyResolutionManagement {
@@ -18,13 +18,26 @@ dependencyResolutionManagement {
         google()
         mavenCentral()
     }
+    versionCatalogs {
+        create("androidx") {
+            from("androidx.gradle:gradle-version-catalog:2025.08.01")
+        }
+        create("androidxA") {
+            from("androidx.gradle:gradle-version-catalog-alpha:2025.08.01")
+        }
+    }
 }
 
 include(":app", ":main")
 
-gradleEnterprise {
-  buildScan {
-      termsOfServiceUrl = "https://gradle.com/terms-of-service"
-      termsOfServiceAgree = "yes"
-  }
+develocity {
+    buildScan {
+        publishing {
+            onlyIf { false }
+        }
+        buildScan {
+            termsOfUseUrl = "https://gradle.com/help/legal-terms-of-use"
+            termsOfUseAgree = "yes"
+        }
+    }
 }
