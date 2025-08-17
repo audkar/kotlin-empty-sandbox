@@ -32,11 +32,12 @@ android {
         unitTests.isIncludeAndroidResources = true
         managedDevices {
             allDevices {
-                maybeCreate<com.android.build.api.dsl.ManagedVirtualDevice>("pixel2api30").apply {
+                maybeCreate<com.android.build.api.dsl.ManagedVirtualDevice>("pixel2api35").apply {
                     device = "Pixel 2"
-                    apiLevel = 30
+                    apiLevel = 35
                     require64Bit = true
                     systemImageSource = "aosp-atd"
+                    testedAbi = "x86_64"
                 }
             }
         }
