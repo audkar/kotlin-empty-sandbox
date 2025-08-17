@@ -14,7 +14,5 @@ jobs:
         java-version: 17
     - name: Setup Gradle
       uses: gradle/actions/setup-gradle@v4
-      with:
-        gradle-home-cache-cleanup: true
     - name: Build with Gradle
       run: ./gradlew assembleDebug --scan
