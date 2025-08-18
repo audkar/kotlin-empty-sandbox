@@ -12,7 +12,7 @@ android {
     compileSdk = 36
     namespace = "com.audkrs.emptyandroid.main"
     defaultConfig {
-        minSdk = 21
+        minSdk = 23
     }
     compileOptions {
         isCoreLibraryDesugaringEnabled = true
