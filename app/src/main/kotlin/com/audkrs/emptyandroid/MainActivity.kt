@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
             val (helloText, setHelloText) = remember { mutableStateOf("Hello world!") }
             val navScreens: MutableList<NavScreen> = rememberMutableStateListOf(screens = emptyList())
             val navScreen = remember { derivedStateOf { navScreens.lastOrNull() ?: NavScreen.MAIN } }
-            val backHandlerEnabled = remember { derivedStateOf { navScreens.size > 0 } }
+            val backHandlerEnabled = remember { derivedStateOf { navScreens.isNotEmpty() } }
 
             MaterialTheme(
                 colorScheme = darkColorScheme(),
@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity() {
             BackHandler(
                 enabled = backHandlerEnabled.value,
             ) {
-               navScreens.removeLast()
+               navScreens.removeAt(navScreens.lastIndex)
             }
         }
     }
