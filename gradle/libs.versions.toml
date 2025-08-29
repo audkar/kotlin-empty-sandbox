@@ -1,9 +1,9 @@
 [versions]
-com-google-dagger = "2.57"
+com-google-dagger = "2.57.1"
 com-squareup-leakcanary = "2.14"
 coroutines = "1.10.2"
 kotlin = "2.2.10"
-org-robolectric = "4.15.1"
+org-robolectric = "4.16"
 
 [libraries]
 com-android-tools-desugar_jdk_libs = "com.android.tools:desugar_jdk_libs:2.1.5"
@@ -19,8 +19,8 @@ org-jetbrains-kotlinx-kotlinx-coroutines-android = { module = "org.jetbrains.kot
 org-robolectric = { module = "org.robolectric:robolectric", version.ref = "org-robolectric" }
 
 [plugins]
-com-android-application = "com.android.application:8.12.0"
-com-google-dagger-hilt-android = "com.google.dagger.hilt.android:2.57"
+com-android-application = "com.android.application:8.12.2"
+com-google-dagger-hilt-android = "com.google.dagger.hilt.android:2.57.1"
 com-google-devtools-ksp = "com.google.devtools.ksp:2.2.10-2.0.2"
 nl-littlerobots-version-catalog-update = "nl.littlerobots.version-catalog-update:1.0.0"
 org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
