@@ -10,7 +10,7 @@ com-android-tools-desugar_jdk_libs = "com.android.tools:desugar_jdk_libs:2.1.5"
 com-google-dagger-hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "com-google-dagger" }
 com-google-dagger-hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "com-google-dagger" }
 com-google-dagger-hilt-android-testing = { module = "com.google.dagger:hilt-android-testing", version.ref = "com-google-dagger" }
-com-google-truth = "com.google.truth:truth:1.4.4"
+com-google-truth = "com.google.truth:truth:1.4.5"
 com-slack-lint-compose-compose-lint-checks = "com.slack.lint.compose:compose-lint-checks:1.4.2"
 com-squareup-leakcanary-leakcanary-android = { module = "com.squareup.leakcanary:leakcanary-android", version.ref = "com-squareup-leakcanary" }
 junit = "junit:junit:4.13.2"
