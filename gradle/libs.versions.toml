@@ -2,7 +2,7 @@
 com-google-dagger = "2.57.2"
 com-squareup-leakcanary = "2.14"
 coroutines = "1.10.2"
-kotlin = "2.2.10"
+kotlin = "2.2.21"
 org-robolectric = "4.16"
 
 [libraries]
