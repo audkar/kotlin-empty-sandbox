@@ -1,6 +1,6 @@
 [versions]
 agp = "9.0.0"
-com-google-dagger = "2.59"
+com-google-dagger = "2.59.2"
 com-squareup-leakcanary = "2.14"
 coroutines = "1.10.2"
 kotlin = "2.3.0"
