@@ -24,6 +24,6 @@ com-android-application = { id = "com.android.application", version.ref = "agp" 
 com-android-library = { id = "com.android.library", version.ref = "agp" }
 com-google-dagger-hilt-android = "com.google.dagger.hilt.android:2.59"
 com-google-devtools-ksp = "com.google.devtools.ksp:2.3.5"
-nl-littlerobots-version-catalog-update = "nl.littlerobots.version-catalog-update:1.0.1"
+nl-littlerobots-version-catalog-update = "nl.littlerobots.version-catalog-update:1.1.0"
 org-jetbrains-kotlin-plugin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 org-jetbrains-kotlin-plugin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }
