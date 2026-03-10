@@ -1,9 +1,9 @@
 [versions]
-agp = "9.0.0"
-com-google-dagger = "2.59"
+agp = "9.1.0"
+com-google-dagger = "2.59.2"
 com-squareup-leakcanary = "2.14"
 coroutines = "1.10.2"
-kotlin = "2.3.0"
+kotlin = "2.3.10"
 org-robolectric = "4.16.1"
 
 [libraries]
@@ -22,8 +22,8 @@ org-robolectric = { module = "org.robolectric:robolectric", version.ref = "org-r
 [plugins]
 com-android-application = { id = "com.android.application", version.ref = "agp" }
 com-android-library = { id = "com.android.library", version.ref = "agp" }
-com-google-dagger-hilt-android = "com.google.dagger.hilt.android:2.59"
-com-google-devtools-ksp = "com.google.devtools.ksp:2.3.5"
-nl-littlerobots-version-catalog-update = "nl.littlerobots.version-catalog-update:1.0.1"
+com-google-dagger-hilt-android = "com.google.dagger.hilt.android:2.59.2"
+com-google-devtools-ksp = "com.google.devtools.ksp:2.3.6"
+nl-littlerobots-version-catalog-update = "nl.littlerobots.version-catalog-update:1.1.0"
 org-jetbrains-kotlin-plugin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 org-jetbrains-kotlin-plugin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }
