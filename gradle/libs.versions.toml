@@ -1,5 +1,5 @@
 [versions]
-agp = "9.1.0"
+agp = "9.2.0"
 com-google-dagger = "2.59.2"
 com-squareup-leakcanary = "2.14"
 coroutines = "1.10.2"
