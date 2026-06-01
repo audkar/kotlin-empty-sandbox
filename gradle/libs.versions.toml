@@ -2,7 +2,7 @@
 agp = "9.1.0"
 com-google-dagger = "2.59.2"
 com-squareup-leakcanary = "2.14"
-coroutines = "1.10.2"
+coroutines = "1.11.0"
 kotlin = "2.3.10"
 org-robolectric = "4.16.1"
 
