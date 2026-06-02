@@ -89,6 +89,12 @@ dependencies {
     testImplementation(androidx.testExt.truth)
     testImplementation(libs.com.google.truth)
     testImplementation(libs.org.robolectric)
+    constraints {
+        // https://github.com/robolectric/robolectric/issues/11204
+        debugImplementation("org.ow2.asm:asm:9.9.1") {
+            because("Need for compatibility with JDK 26")
+        }
+    }
     testImplementation(libs.com.google.dagger.hilt.android.testing)
     kspTest(libs.com.google.dagger.hilt.android.compiler)
     testImplementation(platform(androidx.compose.composeBom))
