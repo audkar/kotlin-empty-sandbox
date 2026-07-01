@@ -15,7 +15,7 @@ com-google-truth = "com.google.truth:truth:1.4.5"
 com-slack-lint-compose-compose-lint-checks = "com.slack.lint.compose:compose-lint-checks:1.5.1"
 com-squareup-leakcanary-leakcanary-android = { module = "com.squareup.leakcanary:leakcanary-android", version.ref = "com-squareup-leakcanary" }
 junit = "junit:junit:4.13.2"
-org-jetbrains-kotlinx-kotlinx-collections-immutable = "org.jetbrains.kotlinx:kotlinx-collections-immutable:0.4.0"
+org-jetbrains-kotlinx-kotlinx-collections-immutable = "org.jetbrains.kotlinx:kotlinx-collections-immutable:0.5.0"
 org-jetbrains-kotlinx-kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
 org-robolectric = { module = "org.robolectric:robolectric", version.ref = "org-robolectric" }
 
