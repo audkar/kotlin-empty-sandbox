@@ -3,7 +3,7 @@ agp = "9.2.1"
 com-google-dagger = "2.59.2"
 com-squareup-leakcanary = "2.14"
 coroutines = "1.11.0"
-kotlin = "2.3.21"
+kotlin = "2.4.10"
 org-robolectric = "4.16.1"
 
 [libraries]
