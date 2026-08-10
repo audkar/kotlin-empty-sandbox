@@ -11,7 +11,7 @@ plugins {
 }
 
 android {
-    compileSdk = 36
+    compileSdk = 37
     namespace = "com.audkrs.emptyandroid"
     defaultConfig {
         applicationId = "com.audkrs.emptyandroid"
@@ -32,9 +32,9 @@ android {
         unitTests.isIncludeAndroidResources = true
         managedDevices {
             allDevices {
-                maybeCreate<com.android.build.api.dsl.ManagedVirtualDevice>("pixel2api35").apply {
+                maybeCreate<com.android.build.api.dsl.ManagedVirtualDevice>("pixel2api36").apply {
                     device = "Pixel 2"
-                    apiLevel = 35
+                    apiLevel = 36
                     require64Bit = true
                     systemImageSource = "aosp-atd"
                     testedAbi = "x86_64"
