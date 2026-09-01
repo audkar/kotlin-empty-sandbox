@@ -20,10 +20,10 @@ dependencyResolutionManagement {
     }
     versionCatalogs {
         create("androidx") {
-            from("androidx.gradle:gradle-version-catalog:2026.07.02")
+            from("androidx.gradle:gradle-version-catalog:2026.08.01")
         }
         create("androidxA") {
-            from("androidx.gradle:gradle-version-catalog-alpha:2026.07.02")
+            from("androidx.gradle:gradle-version-catalog-alpha:2026.08.01")
         }
     }
 }
