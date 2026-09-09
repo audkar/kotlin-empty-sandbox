@@ -1,21 +1,27 @@
 [versions]
-agp = "9.3.1"
+agp = "9.4.0"
+androidx-compose-bom = "2026.09.00"
+androidx-compose-ui = "1.12.1"
 com-google-dagger = "2.60.1"
 com-squareup-leakcanary = "2.14"
 coroutines = "1.11.0"
-kotlin = "2.4.10"
+kotlin = "2.4.20"
 org-robolectric = "4.16.1"
 
 [libraries]
+androidx-compose-bom = { module = "androidx.compose:compose-bom", version.ref = "androidx-compose-bom" }
+androidx-compose-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest", version.ref = "androidx-compose-ui" }
+androidx-compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "androidx-compose-ui" }
+androidx-compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "androidx-compose-ui" }
 com-android-tools-desugar_jdk_libs = "com.android.tools:desugar_jdk_libs:2.1.5"
 com-google-dagger-hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "com-google-dagger" }
 com-google-dagger-hilt-android-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "com-google-dagger" }
 com-google-dagger-hilt-android-testing = { module = "com.google.dagger:hilt-android-testing", version.ref = "com-google-dagger" }
 com-google-truth = "com.google.truth:truth:1.4.5"
-com-slack-lint-compose-compose-lint-checks = "com.slack.lint.compose:compose-lint-checks:1.5.4"
+com-slack-lint-compose-compose-lint-checks = "com.slack.lint.compose:compose-lint-checks:1.6.0"
 com-squareup-leakcanary-leakcanary-android = { module = "com.squareup.leakcanary:leakcanary-android", version.ref = "com-squareup-leakcanary" }
 junit = "junit:junit:4.13.2"
-org-jetbrains-kotlinx-kotlinx-collections-immutable = "org.jetbrains.kotlinx:kotlinx-collections-immutable:0.5.1"
+org-jetbrains-kotlinx-kotlinx-collections-immutable = "org.jetbrains.kotlinx:kotlinx-collections-immutable:0.5.2"
 org-jetbrains-kotlinx-kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
 org-robolectric = { module = "org.robolectric:robolectric", version.ref = "org-robolectric" }
 
@@ -23,7 +29,7 @@ org-robolectric = { module = "org.robolectric:robolectric", version.ref = "org-r
 com-android-application = { id = "com.android.application", version.ref = "agp" }
 com-android-library = { id = "com.android.library", version.ref = "agp" }
 com-google-dagger-hilt-android = "com.google.dagger.hilt.android:2.60.1"
-com-google-devtools-ksp = "com.google.devtools.ksp:2.3.11"
+com-google-devtools-ksp = "com.google.devtools.ksp:2.3.12"
 nl-littlerobots-version-catalog-update = "nl.littlerobots.version-catalog-update:1.1.1"
 org-jetbrains-kotlin-plugin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 org-jetbrains-kotlin-plugin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }

@@ -70,15 +70,18 @@ dependencies {
     ksp(libs.com.google.dagger.hilt.android.compiler)
     debugImplementation(libs.com.squareup.leakcanary.leakcanary.android)
     constraints {
-        debugImplementation("com.squareup.okio:okio:3.4.0") {
-            because("Version 3.4.0 fixes the Signed to Unsigned Conversion Error vulnerability")
+        debugImplementation("com.squareup.okio:okio:3.18.2") {
+            because("Version 3.4.0 or later fixes the Signed to Unsigned Conversion Error vulnerability")
+        }
+        implementation("androidx.concurrent:concurrent-futures:1.3.0") {
+            because("Align the Android test compile and runtime classpaths")
         }
     }
-    implementation(platform(androidx.compose.composeBom))
+    implementation(platform(libs.androidx.compose.bom))
     implementation(androidx.composeMaterial3.material3)
-    implementation(androidx.composeUi.uiToolingPreview)
-    debugImplementation(androidx.composeUi.uiTooling)
-    debugImplementation(androidx.composeUi.uiTestManifest)
+    implementation(libs.androidx.compose.ui.tooling.preview)
+    debugImplementation(libs.androidx.compose.ui.tooling)
+    debugImplementation(libs.androidx.compose.ui.test.manifest)
     implementation(androidx.composeMaterial.materialIconsCore)
     implementation(androidx.activity.activityCompose)
     implementation(androidx.lifecycle.lifecycleViewmodelCompose)
@@ -91,13 +94,13 @@ dependencies {
     testImplementation(libs.org.robolectric)
     constraints {
         // https://github.com/robolectric/robolectric/issues/11204
-        testImplementation("org.ow2.asm:asm:9.9.1") {
+        testImplementation("org.ow2.asm:asm:9.10.1") {
             because("Need for compatibility with JDK 26")
         }
     }
     testImplementation(libs.com.google.dagger.hilt.android.testing)
     kspTest(libs.com.google.dagger.hilt.android.compiler)
-    testImplementation(platform(androidx.compose.composeBom))
+    testImplementation(platform(libs.androidx.compose.bom))
     testImplementation(androidx.composeUi.uiTestJunit4)
 
     androidTestImplementation(libs.junit)
@@ -109,6 +112,6 @@ dependencies {
     androidTestImplementation(libs.com.google.truth)
     androidTestImplementation(libs.com.google.dagger.hilt.android.testing)
     kspAndroidTest(libs.com.google.dagger.hilt.android.compiler)
-    testImplementation(platform(androidx.compose.composeBom))
+    testImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(androidx.composeUi.uiTestJunit4)
 }
