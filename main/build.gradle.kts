@@ -37,7 +37,7 @@ dependencies {
     implementation(androidx.core.coreKtx)
     implementation(libs.com.google.dagger.hilt.android)
     ksp(libs.com.google.dagger.hilt.android.compiler)
-    implementation(platform(libs.androidx.compose.bom))
+    implementation(androidx.compose.composeBom)
     implementation(androidx.composeMaterial3.material3)
     implementation(libs.androidx.compose.ui.tooling.preview)
     debugImplementation(libs.androidx.compose.ui.tooling)

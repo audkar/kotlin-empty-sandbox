@@ -9,7 +9,7 @@ pluginManagement {
 rootProject.name = "kotlin-empty-sandbox"
 
 plugins {
-    id("com.gradle.develocity") version ("4.5.1")
+    id("com.gradle.develocity") version ("4.6.0")
 }
 
 dependencyResolutionManagement {
@@ -20,10 +20,10 @@ dependencyResolutionManagement {
     }
     versionCatalogs {
         create("androidx") {
-            from("androidx.gradle:gradle-version-catalog:2026.08.01")
+            from("androidx.gradle:gradle-version-catalog:2026.09.01")
         }
         create("androidxA") {
-            from("androidx.gradle:gradle-version-catalog-alpha:2026.08.01")
+            from("androidx.gradle:gradle-version-catalog-alpha:2026.09.01")
         }
     }
 }

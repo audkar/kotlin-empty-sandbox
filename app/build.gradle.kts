@@ -59,6 +59,7 @@ kotlin {
 }
 
 dependencies {
+    val composeBom = platform(androidx.compose.composeBom)
     implementation(project(":main"))
     coreLibraryDesugaring(libs.com.android.tools.desugar.jdk.libs)
     implementation(androidx.appcompat.appcompat)
@@ -77,7 +78,7 @@ dependencies {
             because("Align the Android test compile and runtime classpaths")
         }
     }
-    implementation(platform(libs.androidx.compose.bom))
+    implementation(composeBom)
     implementation(androidx.composeMaterial3.material3)
     implementation(libs.androidx.compose.ui.tooling.preview)
     debugImplementation(libs.androidx.compose.ui.tooling)
@@ -100,7 +101,7 @@ dependencies {
     }
     testImplementation(libs.com.google.dagger.hilt.android.testing)
     kspTest(libs.com.google.dagger.hilt.android.compiler)
-    testImplementation(platform(libs.androidx.compose.bom))
+    testImplementation(composeBom)
     testImplementation(androidx.composeUi.uiTestJunit4)
 
     androidTestImplementation(libs.junit)
@@ -112,6 +113,6 @@ dependencies {
     androidTestImplementation(libs.com.google.truth)
     androidTestImplementation(libs.com.google.dagger.hilt.android.testing)
     kspAndroidTest(libs.com.google.dagger.hilt.android.compiler)
-    testImplementation(platform(libs.androidx.compose.bom))
+    androidTestImplementation(composeBom)
     androidTestImplementation(androidx.composeUi.uiTestJunit4)
 }

@@ -1,15 +1,13 @@
 [versions]
-agp = "9.4.0"
-androidx-compose-bom = "2026.09.00"
+agp = "9.4.1"
 androidx-compose-ui = "1.12.1"
 com-google-dagger = "2.60.1"
 com-squareup-leakcanary = "2.14"
 coroutines = "1.11.0"
 kotlin = "2.4.20"
-org-robolectric = "4.16.1"
+org-robolectric = "4.17"
 
 [libraries]
-androidx-compose-bom = { module = "androidx.compose:compose-bom", version.ref = "androidx-compose-bom" }
 androidx-compose-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest", version.ref = "androidx-compose-ui" }
 androidx-compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "androidx-compose-ui" }
 androidx-compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "androidx-compose-ui" }
