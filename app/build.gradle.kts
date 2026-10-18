@@ -95,7 +95,7 @@ dependencies {
     testImplementation(libs.org.robolectric)
     constraints {
         // https://github.com/robolectric/robolectric/issues/11204
-        testImplementation("org.ow2.asm:asm:9.10.1") {
+        testImplementation("org.ow2.asm:asm:9.11.1") {
             because("Need for compatibility with JDK 26")
         }
     }
